@@ -1,0 +1,52 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    background-color: rgb(16, 78, 148);
+}
+
+#wrap {
+    background-color: whitesmoke;
+}
+
+input {
+    padding: 10px;
+    margin: 30px 10px 10px 30px;
+    width: 300px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 3px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: -20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: gray;
+}
+
+li:hover {
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+ul li #active {
+    color: black;
+}
+
+#answer {
+    padding: 0 30px 10px;
+    font-weight: 600;
+}
