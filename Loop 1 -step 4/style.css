@@ -19,7 +19,8 @@ section {
 }
 
 .menu {
-    margin-right: 60px;
+    /*margin-right: 60px;*/
+    width: 50%;
 }
 
 ol {
@@ -31,17 +32,22 @@ li {
     margin-bottom: 15px;
     font-size: 1.3em;
     counter-increment: li;
+    cursor: pointer;
 }
 
 li::before {
     content: counter(li);
-    color: white;
+    color: rgb(102, 102, 102);
     display: inline-block;
-    width: 1.3em;
-    margin-left: 3em;
-    left: -3em;
+    margin-right: 1.2em;
+    padding: 4px 8px;
+    background-color: rgb(184, 186, 189);
+    border-radius: 50%;
+}
+
+li.active::before {
     background-color: rgb(1, 77, 165);
-    border-radius: 50%
+    color: white;
 }
 
 .right-part {
@@ -55,7 +61,10 @@ li::before {
 input {
     font-size: 1em;
     padding: 3px;
-    width: 100%;
+    width: 80%;
+    margin-bottom: 20px;
+    background: transparent;
+    border: none;
 }
 
 .btn {
@@ -64,4 +73,5 @@ input {
     border-radius: 3px;
     width: auto;
     font-weight: 550;
+    cursor: pointer;
 }

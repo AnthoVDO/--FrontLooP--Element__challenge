@@ -19,7 +19,7 @@
             <!--Left part-->
             <div class="menu">
                 <ol>
-                    <li class="title">Choose title</li>
+                    <li class="title active">Choose title</li>
                     <li class="description">Choose description</li>
                     <li class="confirmation">Confirm data</li>
                 </ol>
@@ -27,14 +27,14 @@
             </div>
             <!--Right part-->
             <div class="right-part">
-                <div class="part_title placed hidden">
-                    <input type="text" placeholder="Choose title content">
+                <div class="part_title placed ">
+                    <input type="text" placeholder="Choose title content" class="title_content">
                     <div>
                         <button class="btn sbm_title">Submit title</button>
                     </div>
                 </div>
-                <div class=" part_description placed hidden">
-                    <input type="text" placeholder="Choose description content">
+                <div class=" part_description placed hidden ">
+                    <input type="text" placeholder="Choose description content" class="description_content">
                     <div>
                         <button class="btn sbm_back">Back</button>
                         <button class="btn sbm_description">Submit description</button>
@@ -47,7 +47,7 @@
                         <button class="btn submit">Yes, go head</button>
                     </div>
                 </div>
-                <div class=" confirmed ">
+                <div class=" confirmed hidden">
                     <p>Ok, we're done. Thanks for sending us your data!</p>
                 </div>
             </div>
