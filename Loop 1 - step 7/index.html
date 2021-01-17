@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Show on scroll</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--
+        Write a script that tracks whenever elements appears on the screen and makes them visible then
+    -->
+
+    <div class="container">
+        <div class="content "></div>
+        <div class="content hidden"></div>
+        <div class="content hidden"></div>
+        <div class="content hidden"></div>
+        <div class="content hidden"></div>
+        <div class="content hidden"></div>
+        <div class="content hidden"></div>
+    </div>
+
+    <!--
+        Script Here
+    -->
+
+    <script>
+        const container = document.querySelector('.container');
+        const contents = document.querySelectorAll('.content');
+        let obj = {};
+
+
+
+        let numberOfDiv = contents.length;
+        let step = document.body.offsetHeight / numberOfDiv;
+
+        for (let i = 1; i <= contents.length; i++) {
+            console.log(contents[i]);
+            window.addEventListener("scroll", function() {
+                centerY = (window.innerHeight * 0.75 + scrollY)
+
+                if (centerY == i * step) {
+                    console.log(content[i]);
+                }
+
+
+
+
+            })
+
+        }
+    </script>
+</body>
+
+</html>
