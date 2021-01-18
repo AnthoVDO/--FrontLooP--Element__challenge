@@ -26,4 +26,11 @@
 
 .hidden {
     opacity: 0;
+    transform: translate(-30deg);
+}
+
+.visible {
+    opacity: 1;
+    transition: 1s cubic-bezier(.38, .02, 0, 1);
+    transform: translateY(0);
 }

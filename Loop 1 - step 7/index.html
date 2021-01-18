@@ -30,28 +30,34 @@
     <script>
         const container = document.querySelector('.container');
         const contents = document.querySelectorAll('.content');
-        let obj = {};
 
 
-
-        let numberOfDiv = contents.length;
-        let step = document.body.offsetHeight / numberOfDiv;
-
-        for (let i = 1; i <= contents.length; i++) {
-            console.log(contents[i]);
-            window.addEventListener("scroll", function() {
-                centerY = (window.innerHeight * 0.75 + scrollY)
-
-                if (centerY == i * step) {
-                    console.log(content[i]);
-                }
+        // using intersection observer;
 
 
-
-
-            })
-
+        let options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 1
         }
+        const watch = function(entries, observer) {
+            entries.forEach(entry => {
+
+                if (entry.intersectionRatio) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                    console.log(entry.target)
+
+                }
+            })
+        }
+
+
+
+        let observer = new IntersectionObserver(watch, options);
+        contents.forEach(e => {
+            observer.observe(e);
+        })
     </script>
 </body>
 
