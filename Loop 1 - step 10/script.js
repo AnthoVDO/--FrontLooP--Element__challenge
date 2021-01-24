@@ -10,7 +10,6 @@ container.addEventListener("dragover", (e) => {
 container.addEventListener('drop', (e) => {
 
     e.preventDefault();
-
     card.style.top = `${e.pageY-100}px`;
     card.style.left = `${e.pageX-100}px`;
 })
