@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Validation</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--
+        Build a script for form validation.
+        It should validate form on its submit and should support required fields, emails
+        and field confirmation (should check if the value of the linked field is the same).
+        If form is invalid it shouldn't be submitted and errors must be shown.
+    -->
+
+    <div class="container">
+        <form action="" method="get" class="container__login">
+            <div class="container__login">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="container__login--error">Field is required</div>
+            <div class="container__login">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="container__login--error">Field is required</div>
+            <div class="container__login">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="container__login--error">Field is required</div>
+            <div class="container__login">
+                <label for="confirm__password">Confirm password</label>
+                <input type="password" name="confirm__password" id="confirm__password" required>
+            </div>
+            <div class="container__login--error">It should match password</div>
+            <div class="container__login__btn">
+                <input type="submit" value="Subscribe!" class="btn">
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
