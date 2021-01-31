@@ -16,27 +16,27 @@
     -->
 
     <div class="container">
-        <form action="" method="get" class="container__login">
+        <form id="form" action="" method="get" class="container__login">
             <div class="container__login">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" class="input">
             </div>
-            <div class="container__login--error">Field is required</div>
+            <div class="container__login--error name">Field is required</div>
             <div class="container__login">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" class="input">
             </div>
-            <div class="container__login--error">Field is required</div>
+            <div class="container__login--error email">Field is required</div>
             <div class="container__login">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
+                <input type="password" name="password" id="password" class="input">
             </div>
-            <div class="container__login--error">Field is required</div>
+            <div class="container__login--error password">Field is required</div>
             <div class="container__login">
                 <label for="confirm__password">Confirm password</label>
-                <input type="password" name="confirm__password" id="confirm__password" required>
+                <input type="password" name="confirm__password" id="confirm__password" class="input">
             </div>
-            <div class="container__login--error">It should match password</div>
+            <div class="container__login--error confirm__password">It should match password</div>
             <div class="container__login__btn">
                 <input type="submit" value="Subscribe!" class="btn">
             </div>

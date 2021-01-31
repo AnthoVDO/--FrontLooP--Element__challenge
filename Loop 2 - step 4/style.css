@@ -16,17 +16,11 @@ body {
 .container {
     background-color: white;
     width: 80%;
-    min-height: 70%;
     border-radius: 15px;
 }
 
 form {
-    height: 95%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: space-around;
-    justify-content: space-around;
+    min-height: 95%;
 }
 
 .container__login,
@@ -59,14 +53,13 @@ label {
 
 .container__login__btn {
     border: none;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 5%;
 }
 
 .btn {
     padding: 3%;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 form .container__login--error {
@@ -74,5 +67,6 @@ form .container__login--error {
     margin-bottom: 10px !important;
     color: red;
     border: none;
+    margin-left: 5%;
     display: none;
 }
